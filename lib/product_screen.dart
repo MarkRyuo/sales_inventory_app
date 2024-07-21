@@ -7,6 +7,9 @@ class ProductScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get screen dimensions
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
@@ -29,8 +32,9 @@ class ProductScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                // Adjust width based on screen size
                 SizedBox(
-                  width: 200, // Set a specific height here
+                  width: screenWidth * 0.4, // 40% of screen width
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -61,7 +65,7 @@ class ProductScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 200, // Set a specific height here
+                  width: screenWidth * 0.4, // 40% of screen width
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -96,7 +100,6 @@ class ProductScreen extends StatelessWidget {
           ],
         ),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         onTap: (index) {
