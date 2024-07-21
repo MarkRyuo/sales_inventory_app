@@ -3,6 +3,8 @@ import 'package:sales_inventory_app/home_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 
 class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
