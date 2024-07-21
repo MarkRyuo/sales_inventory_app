@@ -44,7 +44,7 @@ class ProductScreen extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      Icon(Icons.cube, color: Colors.green),
+                      Icon(Icons.cable, color: Colors.green),
                       Text(
                         'Product',
                         style: TextStyle(
