@@ -65,9 +65,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.qr_code_scanner),
-              label: Text('Scan asset'),
+              label: const Text('Scan asset'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF50B498),
+                backgroundColor: const Color(0xFF50B498),
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: TextStyle(fontSize: 18),
               ),
