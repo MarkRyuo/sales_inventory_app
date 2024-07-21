@@ -21,9 +21,10 @@ class ProductScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0), // Add padding if needed
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start, // Align to the start
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -87,6 +88,7 @@ class ProductScreen extends StatelessWidget {
           ],
         ),
       ),
+
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         onTap: (index) {
