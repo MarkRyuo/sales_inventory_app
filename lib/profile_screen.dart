@@ -10,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: Color(0xFFD4ED91),
+        backgroundColor: const Color(0xFFD4ED91),
         title: const Row(
           children: [
             Text('Sales IMS'),
