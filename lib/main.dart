@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 import 'home_screen.dart'; // Import the home screen
 
 void main() {
@@ -56,10 +57,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // SvgPicture.asset(
-                    //   'assets/inventory-svgrepo-com.svg',
-                    //   height: 60,
-                    // ),
+                    SvgPicture.asset(
+                      'assets/inventory-svgrepo-com.svg', // Use SvgPicture.asset for SVG
+                      height: 60,
+                    ),
                     const SizedBox(width: 16),
                     const Text(
                       'Sales Inventory',

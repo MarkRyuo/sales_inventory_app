@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
+import 'main.dart'; // Import the main file to access the LoginScreen
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -15,6 +15,17 @@ class HomeScreen extends StatelessWidget {
             Text('Home'),
           ],
         ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => LoginScreen()),
+              );
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -56,6 +67,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 1, // Set the Home tab as the default selected tab
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.folder),
