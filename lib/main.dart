@@ -83,16 +83,32 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(height: 30),
-                ConstrainedBox(
+                Container(
                   constraints: const BoxConstraints(
                     maxWidth: 300, // Set the maximum width for the button
+                  ),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0xFF06D200).withOpacity(0.35),
+                        Color(0xFF036C00).withOpacity(0.97),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(8), // Rounded corners
                   ),
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 132, 245, 136),
-                      padding: const EdgeInsets.symmetric(vertical: 15),
-                      textStyle: const TextStyle(fontSize: 16),
+                      backgroundColor: Colors.transparent, // Use transparent color
+                      padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
+                      textStyle: const TextStyle(
+                        fontSize: 18,
+                        color: Color.fromARGB(255, 255, 255, 255), // Set text color to white
+                      ), // Increased font size
+                      minimumSize: const Size.fromHeight(50), // Minimum height for the button
+                      shadowColor: Colors.transparent, // Remove shadow
                     ),
                     child: const Text('Log In'),
                   ),
@@ -102,10 +118,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     // Implement forgot password functionality
                   },
-                  child: const Text('forgot the password? Contact Admin'),
                   style: TextButton.styleFrom(
                     foregroundColor: const Color.fromARGB(255, 31, 31, 31),
                   ),
+                  child: const Text('forgot the password? Contact Admin'),
                 ),
               ],
             ),
