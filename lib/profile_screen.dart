@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
                 );
               },
               style: TextButton.styleFrom(
-                foregroundColor: Color(0xFF50B498),
+                foregroundColor: const Color(0xFF50B498),
               ),
               child: Text('Log out'),
             ),
