@@ -26,7 +26,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool _obscureText = true;
-  bool _isHovered = false; // Track hover state
 
   void _togglePasswordVisibility() {
     setState(() {
@@ -85,50 +84,34 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(height: 30),
-                MouseRegion(
-                  onEnter: (_) {
-                    setState(() {
-                      _isHovered = true;
-                    });
-                  },
-                  onExit: (_) {
-                    setState(() {
-                      _isHovered = false;
-                    });
-                  },
-                  child: Container(
-                    constraints: const BoxConstraints(
-                      maxWidth: 300, // Set the maximum width for the button
+                Container(
+                  constraints: const BoxConstraints(
+                    maxWidth: 300, // Set the maximum width for the button
+                  ),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        Color(0xFF06D200).withOpacity(0.35),
+                        Color(0xFF036C00).withOpacity(0.97),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
                     ),
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [
-                          _isHovered
-                              ? Color(0xFF03A900).withOpacity(0.60) // Lighter green on hover
-                              : Color(0xFF06D200).withOpacity(0.70),
-                          _isHovered
-                              ? Color.fromARGB(255, 87, 245, 82).withOpacity(0.8) // Darker green on hover
-                              : Color(0xFF036C00).withOpacity(0.97),
-                        ],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(8), // Rounded corners
+                    borderRadius: BorderRadius.circular(8), // Rounded corners
+                  ),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.transparent, // Use transparent color
+                      padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
+                      textStyle: const TextStyle(
+                        fontSize: 18,
+                        color: Colors.white, // Set text color to white
+                      ), // Increased font size
+                      minimumSize: const Size.fromHeight(50), // Minimum height for the button
+                      shadowColor: Colors.transparent, // Remove shadow
                     ),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent, // Use transparent color
-                        padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
-                        textStyle: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.white, // Set text color to white
-                        ), // Increased font size
-                        minimumSize: const Size.fromHeight(50), // Minimum height for the button
-                        shadowColor: Colors.transparent, // Remove shadow
-                      ),
-                      child: const Text('Log In'),
-                    ),
+                    child: const Text('Log In'),
                   ),
                 ),
                 const SizedBox(height: 16),
