@@ -78,8 +78,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 SizedBox(height: 24),
-                SizedBox(
-                  width: double.infinity,
+                ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: 200, // Set the maximum width for the button
+                  ),
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
