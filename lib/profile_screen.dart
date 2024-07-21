@@ -80,8 +80,12 @@ class ProfileScreen extends StatelessWidget {
               );
               break;
             case 2:
-              // Handle Profile tab (do nothing)
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductScreen()),
+              );
               break;
+          
           }
         },
         items: const <BottomNavigationBarItem>[
