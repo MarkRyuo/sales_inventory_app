@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
         selectedItemColor: const Color(0xFF50B498),
-        unselectedItemColor: Color(0xFF9CDBA6),
+        unselectedItemColor: const Color(0xFF9CDBA6),
       ),
     );
   }
