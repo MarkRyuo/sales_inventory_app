@@ -31,7 +31,7 @@ class ProductScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
-                    color: Color(0xFFDEF9C4),
+                    color: const Color(0xFFDEF9C4),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: const Column(
