@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sales_inventory_app/home_screen.dart';
+import 'package:sales_inventory_app/profile_screen.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({super.key});
