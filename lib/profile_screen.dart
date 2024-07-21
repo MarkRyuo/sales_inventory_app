@@ -76,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
             case 1:
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => HomeScreen()),
+                MaterialPageRoute(builder: (context) => const HomeScreen()),
               );
               break;
             case 2:
@@ -98,7 +98,7 @@ class ProfileScreen extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: Color(0xFF50B498),
+        selectedItemColor: const Color(0xFF50B498),
         unselectedItemColor: Color(0xFF9CDBA6),
       ),
     );
