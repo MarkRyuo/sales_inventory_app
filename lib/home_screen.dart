@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
+import 'product_screen.dart'; // Import the ProductScreen
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,7 +20,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
     switch (index) {
       case 0:
-        // Handle Files tab
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const ProductScreen()),
+        );
         break;
       case 1:
         // Handle Home tab (do nothing)
@@ -27,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       case 2:
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => ProfileScreen()),
+          MaterialPageRoute(builder: (context) => const ProfileScreen()),
         );
         break;
     }
