@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
+                  backgroundColor: Colors.green,
                   padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                   textStyle: TextStyle(fontSize: 16),
                 ),
@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                 },
                 child: Text('forgot the password? Contact Admin'),
                 style: TextButton.styleFrom(
-                  primary: Colors.grey,
+                  foregroundColor: Colors.grey,
                 ),
               ),
             ],
