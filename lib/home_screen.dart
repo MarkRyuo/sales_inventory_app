@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(Icons.add),
+              icon: const Icon(Icons.add),
               label: Text('Add new asset'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF468585),
