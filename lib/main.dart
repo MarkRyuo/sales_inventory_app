@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 import 'home_screen.dart'; // Import the home screen
+import 'profile_screen.dart'; // Import the profile screen
 
 void main() {
   runApp(SalesInventoryApp());
