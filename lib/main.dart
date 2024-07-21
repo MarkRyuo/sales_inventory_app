@@ -18,7 +18,20 @@ class SalesInventoryApp extends StatelessWidget {
   }
 }
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  bool _obscureText = true;
+
+  void _togglePasswordVisibility() {
+    setState(() {
+      _obscureText = !_obscureText;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,59 +39,69 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'assets/logo.png', // Replace with your logo asset
-                height: 80,
-              ),
-              SizedBox(height: 24),
-              Text(
-                'Sales Inventory',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black87,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  'assets/logo.png', // Replace with your logo asset
+                  height: 80,
                 ),
-              ),
-              SizedBox(height: 24),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Username',
+                SizedBox(height: 24),
+                Text(
+                  'Sales Inventory',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black87,
+                  ),
                 ),
-              ),
-              SizedBox(height: 16),
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
-                  suffixIcon: Icon(Icons.visibility_off),
+                SizedBox(height: 24),
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Username',
+                  ),
                 ),
-              ),
-              SizedBox(height: 24),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-                  textStyle: TextStyle(fontSize: 16),
+                SizedBox(height: 16),
+                TextField(
+                  obscureText: _obscureText,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        _obscureText ? Icons.visibility_off : Icons.visibility,
+                      ),
+                      onPressed: _togglePasswordVisibility,
+                    ),
+                  ),
                 ),
-                child: Text('Log In'),
-              ),
-              SizedBox(height: 16),
-              TextButton(
-                onPressed: () {
-                  // Implement forgot password functionality
-                },
-                child: Text('forgot the password? Contact Admin'),
-                style: TextButton.styleFrom(
-                  foregroundColor: Colors.grey,
+                SizedBox(height: 24),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      textStyle: TextStyle(fontSize: 16),
+                    ),
+                    child: Text('Log In'),
+                  ),
                 ),
-              ),
-            ],
+                SizedBox(height: 16),
+                TextButton(
+                  onPressed: () {
+                    // Implement forgot password functionality
+                  },
+                  child: Text('forgot the password? Contact Admin'),
+                  style: TextButton.styleFrom(
+                    foregroundColor: Colors.grey,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
