@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     SvgPicture.asset(
                       'assets/inventory-svgrepo-com.svg', // Use SvgPicture.asset for SVG
-                      height: 80,
+                      height: 60,
                     ),
                     const SizedBox(width: 16),
                     const Text(
