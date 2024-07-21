@@ -4,10 +4,12 @@ import 'home_screen.dart'; // Import the home screen
 // import 'profile_screen.dart'; // Import the profile screen
 
 void main() {
-  runApp(SalesInventoryApp());
+  runApp(const SalesInventoryApp());
 }
 
 class SalesInventoryApp extends StatelessWidget {
+  const SalesInventoryApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,7 @@ class SalesInventoryApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginScreen(),
+      home: const LoginScreen(),
     );
   }
 }
