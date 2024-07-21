@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Scan asset'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF50B498),
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: TextStyle(fontSize: 18),
               ),
             ),
