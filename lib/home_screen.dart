@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sales_inventory_app/product_screen.dart';
-import 'main.dart'; // Import the main file to access the LoginScreen
-import 'profile_screen.dart'; // Import the ProfileScreen
-// import 'product_screen.dart'; // Import the ProductScreen
+import 'product_screen.dart';
+import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,19 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
     switch (index) {
       case 0:
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const ProductScreen()),
-        );
+        Navigator.pushReplacementNamed(context, '/product');
         break;
       case 1:
         // Handle Home tab (do nothing)
         break;
       case 2:
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const ProfileScreen()),
-        );
+        Navigator.pushReplacementNamed(context, '/profile');
         break;
     }
   }
@@ -41,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF7E1), // Background color
+      backgroundColor: const Color(0xFFFDF7E1),
       appBar: AppBar(
         backgroundColor: const Color(0xFFD4ED91),
         title: const Row(
@@ -55,10 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const LoginScreen()),
-              );
+              Navigator.pushReplacementNamed(context, '/login');
             },
           ),
         ],
