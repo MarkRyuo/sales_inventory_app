@@ -10,11 +10,18 @@ class AppTheme {
   static ThemeData get theme {
     return ThemeData(
       primaryColor: colorPrimary,
-      accentColor: colorAccent,
-      backgroundColor: colorBackground,
+      hintColor: colorAccent,
       textTheme: const TextTheme(
-        bodyText1: TextStyle(color: colorText, fontFamily: 'Poppins'),
-        bodyText2: TextStyle(color: colorText, fontFamily: 'Poppins'),
+        bodyLarge: TextStyle(color: colorText, fontFamily: 'Poppins'),
+        bodyMedium: TextStyle(color: colorText, fontFamily: 'Poppins'),
+      ),
+      colorScheme: ColorScheme.fromSwatch().copyWith(
+        primary: colorPrimary,
+        secondary: colorSecondary,
+        background: colorBackground,
+        surface: colorBackground,
+        onBackground: colorText,
+        onSurface: colorText,
       ),
     );
   }

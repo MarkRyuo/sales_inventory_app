@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sales_inventory_app/theme.dart';
 import 'profile.dart';
 import 'products.dart';
 import 'scan_asset.dart';
