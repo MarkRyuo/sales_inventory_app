@@ -57,7 +57,7 @@ class ProductScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     color: const Color(0xFFDEF9C4),
                     borderRadius: BorderRadius.circular(8),
