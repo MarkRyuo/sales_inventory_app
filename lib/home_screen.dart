@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
               label: Text('Search assets'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFFDEF9C4),
