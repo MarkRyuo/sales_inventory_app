@@ -22,6 +22,8 @@ class SalesInventoryApp extends StatelessWidget {
 }
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -47,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 250, 235),
+      backgroundColor:const Color.fromARGB(255, 255, 250, 235),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32.0),
@@ -102,8 +104,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Color(0xFF06D200).withOpacity(0.50),
-                        Color.fromARGB(255, 9, 116, 5).withOpacity(0.97),
+                        const  Color(0xFF06D200).withOpacity(0.50),
+                        const Color.fromARGB(255, 9, 116, 5).withOpacity(0.97),
                       ],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
