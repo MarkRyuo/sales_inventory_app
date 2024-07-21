@@ -3,6 +3,8 @@ import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -37,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
         backgroundColor: Color(0xFFD4ED91),
-        title: Row(
+        title: const Row(
           children: [
             Icon(Icons.home),
             SizedBox(width: 8),
@@ -62,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(Icons.qr_code_scanner),
+              icon: const Icon(Icons.qr_code_scanner),
               label: Text('Scan asset'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFF50B498),
