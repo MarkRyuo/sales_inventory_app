@@ -30,32 +30,34 @@ class ProductScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFDEF9C4),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const Column(
-                    children: [
-                      Text(
-                        '0',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                      Icon(Icons.cable, color: Colors.green),
-                      Text(
-                        'Product',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+  padding: const EdgeInsets.all(20),
+  width: 300, // Set a specific width here
+  decoration: BoxDecoration(
+    color: const Color(0xFFDEF9C4),
+    borderRadius: BorderRadius.circular(10),
+  ),
+  child: const Column(
+    children: [
+      Text(
+        '0',
+        style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
+      ),
+      Icon(Icons.cable, color: Colors.green),
+      Text(
+        'Product',
+        style: TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+      ),
+    ],
+  ),
+)
+
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
