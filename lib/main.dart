@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF8F0E3), // Light beige color
+      backgroundColor: const Color(0xFFF8F0E3), // Light beige color
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32.0),
@@ -47,8 +47,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   'assets/logo.png', // Replace with your logo asset
                   height: 80,
                 ),
-                SizedBox(height: 24),
-                Text(
+                const SizedBox(height: 24),
+                const Text(
                   'Sales Inventory',
                   style: TextStyle(
                     fontSize: 24,
@@ -56,18 +56,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Colors.black87,
                   ),
                 ),
-                SizedBox(height: 24),
-                TextField(
+                const SizedBox(height: 24),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Username',
                   ),
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextField(
                   obscureText: _obscureText,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: const OutlineInputBorder(),
                     labelText: 'Password',
                     suffixIcon: IconButton(
                       icon: Icon(
@@ -77,29 +77,29 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 24),
+                const SizedBox(height: 30),
                 ConstrainedBox(
-                  constraints: BoxConstraints(
-                    maxWidth: 200, // Set the maximum width for the button
+                  constraints: const BoxConstraints(
+                    maxWidth: 300, // Set the maximum width for the button
                   ),
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
-                      padding: EdgeInsets.symmetric(vertical: 15),
-                      textStyle: TextStyle(fontSize: 16),
+                      backgroundColor: const Color.fromARGB(255, 132, 245, 136),
+                      padding: const EdgeInsets.symmetric(vertical: 15),
+                      textStyle: const TextStyle(fontSize: 16),
                     ),
-                    child: Text('Log In'),
+                    child: const Text('Log In'),
                   ),
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 TextButton(
                   onPressed: () {
                     // Implement forgot password functionality
                   },
-                  child: Text('forgot the password? Contact Admin'),
+                  child: const Text('forgot the password? Contact Admin'),
                   style: TextButton.styleFrom(
-                    foregroundColor: Colors.grey,
+                    foregroundColor: const Color.fromARGB(255, 31, 31, 31),
                   ),
                 ),
               ],
