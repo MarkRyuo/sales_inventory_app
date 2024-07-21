@@ -30,7 +30,7 @@ class ProductScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
-                  height: 200, // Set a specific height here
+                  width: 200, // Set a specific height here
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
@@ -61,7 +61,7 @@ class ProductScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 200, // Set a specific height here
+                  width: 200, // Set a specific height here
                   child: Container(
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
