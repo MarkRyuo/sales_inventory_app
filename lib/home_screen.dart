@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
               icon: Icon(Icons.add),
