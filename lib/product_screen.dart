@@ -34,8 +34,8 @@ class ProductScreen extends StatelessWidget {
                     color: Color(0xFFDEF9C4),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         '0',
                         style: TextStyle(
@@ -61,8 +61,8 @@ class ProductScreen extends StatelessWidget {
                     color: Color(0xFFDEF9C4),
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       Text(
                         '0',
                         style: TextStyle(
