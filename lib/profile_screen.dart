@@ -50,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.grey[600],
               ),
             ),
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
             TextButton(
               onPressed: () {
                 Navigator.pushReplacement(
