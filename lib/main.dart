@@ -102,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent, // Use transparent color
+                      primary: Colors.transparent, // Use transparent color for button
                       padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
                       textStyle: const TextStyle(
                         fontSize: 18,
