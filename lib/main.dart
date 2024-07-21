@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 
 void main() {
   runApp(SalesInventoryApp());
@@ -46,8 +47,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      'assets/logo.jpg', // Replace with your logo asset
+                    SvgPicture.asset(
+                      'assets/inventory-svgrepo-com.svg', // Use SvgPicture.asset for SVG
                       height: 80,
                     ),
                     const SizedBox(width: 16),
@@ -105,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
                       textStyle: const TextStyle(
                         fontSize: 18,
-                        color: Color.fromARGB(255, 255, 255, 255), // Set text color to white
+                        color: Colors.white, // Set text color to white
                       ), // Increased font size
                       minimumSize: const Size.fromHeight(50), // Minimum height for the button
                       shadowColor: Colors.transparent, // Remove shadow
