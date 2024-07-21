@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
+import 'home_screen.dart'; // Import the home screen
 
 void main() {
   runApp(SalesInventoryApp());
@@ -33,10 +33,19 @@ class _LoginScreenState extends State<LoginScreen> {
     });
   }
 
+  void _login() {
+    // Implement your login logic here.
+    // For demonstration, we'll navigate to the HomeScreen.
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => HomeScreen()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 250, 235), // Background color in RGB format
+      backgroundColor: Color.fromARGB(255, 255, 250, 235),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32.0),
@@ -47,10 +56,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
-                      'assets/inventory-svgrepo-com.svg', // Use SvgPicture.asset for SVG
-                      height: 60,
-                    ),
+                    // SvgPicture.asset(
+                    //   'assets/inventory-svgrepo-com.svg',
+                    //   height: 60,
+                    // ),
                     const SizedBox(width: 16),
                     const Text(
                       'Sales Inventory',
@@ -86,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 30),
                 Container(
                   constraints: const BoxConstraints(
-                    maxWidth: 300, // Set the maximum width for the button
+                    maxWidth: 300,
                   ),
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -97,19 +106,19 @@ class _LoginScreenState extends State<LoginScreen> {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
-                    borderRadius: BorderRadius.circular(8), // Rounded corners
+                    borderRadius: BorderRadius.circular(8),
                   ),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: _login,
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent, // Use transparent color
-                      padding: const EdgeInsets.symmetric(vertical: 20), // Increased vertical padding
+                      backgroundColor: Colors.transparent,
+                      padding: const EdgeInsets.symmetric(vertical: 20),
                       textStyle: const TextStyle(
                         fontSize: 18,
-                        color: Colors.white, // Set text color to white
-                      ), // Increased font size
-                      minimumSize: const Size.fromHeight(50), // Minimum height for the button
-                      shadowColor: Colors.transparent, // Remove shadow
+                        color: Colors.white,
+                      ),
+                      minimumSize: const Size.fromHeight(50),
+                      shadowColor: Colors.transparent,
                     ),
                     child: const Text('Log In'),
                   ),
@@ -122,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextButton.styleFrom(
                     foregroundColor: const Color.fromARGB(255, 45, 45, 42),
                   ),
-                  child: const Text('forgot the password? Contact Admin'),
+                  child: const Text('Forgot the password? Contact Admin'),
                 ),
               ],
             ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
+// import 'package:flutter_svg/flutter_svg.dart'; // Import the flutter_svg package
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               icon: Icon(Icons.qr_code_scanner),
               label: Text('Scan asset'),
               style: ElevatedButton.styleFrom(
-                primary: Color(0xFF50B498),
+                backgroundColor: Color(0xFF50B498),
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: TextStyle(fontSize: 18),
               ),
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               icon: Icon(Icons.search),
               label: Text('Search assets'),
               style: ElevatedButton.styleFrom(
-                primary: Color(0xFFDEF9C4),
+                backgroundColor: Color(0xFFDEF9C4),
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: TextStyle(fontSize: 18),
               ),
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
               icon: Icon(Icons.add),
               label: Text('Add new asset'),
               style: ElevatedButton.styleFrom(
-                primary: Color(0xFF468585),
+                backgroundColor: Color(0xFF468585),
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: TextStyle(fontSize: 18),
               ),
