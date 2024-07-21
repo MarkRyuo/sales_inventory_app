@@ -104,10 +104,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       gradient: LinearGradient(
                         colors: [
                           _isHovered
-                              ? Color(0xFF03A900).withOpacity(0.6) // Lighter green on hover
-                              : Color(0xFF06D200).withOpacity(0.35),
+                              ? Color(0xFF03A900).withOpacity(0.60) // Lighter green on hover
+                              : Color(0xFF06D200).withOpacity(0.70),
                           _isHovered
-                              ? Color(0xFF024C00).withOpacity(0.8) // Darker green on hover
+                              ? Color.fromARGB(255, 4, 99, 0).withOpacity(0.8) // Darker green on hover
                               : Color(0xFF036C00).withOpacity(0.97),
                         ],
                         begin: Alignment.topLeft,
