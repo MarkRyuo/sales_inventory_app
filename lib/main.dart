@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'theme.dart';
-import 'home.dart';
+import 'login.dart';
 
 void main() {
   runApp(SalesInventoryApp());
@@ -13,7 +13,7 @@ class SalesInventoryApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sales Inventory App',
       theme: AppTheme.theme,
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
