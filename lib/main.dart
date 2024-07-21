@@ -44,8 +44,6 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Add top padding here to raise the logo and text
-                const SizedBox(height: 50),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -59,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black87,
+                        color: Color.fromARGB(255, 45, 45, 42),
                       ),
                     ),
                   ],
@@ -122,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Implement forgot password functionality
                   },
                   style: TextButton.styleFrom(
-                    foregroundColor: const Color.fromARGB(255, 31, 31, 31),
+                    foregroundColor: const Color.fromARGB(255, 45, 45, 42),
                   ),
                   child: const Text('forgot the password? Contact Admin'),
                 ),
