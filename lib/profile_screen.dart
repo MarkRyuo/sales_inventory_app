@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sales_inventory_app/home_screen.dart';
-import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 
 class ProfileScreen extends StatelessWidget {
@@ -72,7 +71,10 @@ class ProfileScreen extends StatelessWidget {
         onTap: (index) {
           switch (index) {
             case 0:
-              // Handle Files tab
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const HomeScreen()),
+              );
               break;
             case 1:
               Navigator.pushReplacement(
@@ -81,12 +83,9 @@ class ProfileScreen extends StatelessWidget {
               );
               break;
             case 2:
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => const ProductScreen()),
-              );
+              // Handle Profile tab (do nothing)
               break;
-          
+            case 3: 
           }
         },
         items: const <BottomNavigationBarItem>[
