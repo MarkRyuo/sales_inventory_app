@@ -101,13 +101,13 @@ class _AddNewAssetScreenState extends State<AddNewAssetScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 IconButton(
-                  icon: const Icon(Icons.remove_circle_outline, color: Color(0xFF3C3C3C)),
-                  onPressed: _decrementQuantity,
+                  icon: const Icon(Icons.add_circle, color: Colors.green),
+                  onPressed: _incrementQuantity,
                 ),
                 Text('$_quantity', style: const TextStyle(fontSize: 18, color: Color(0xFF3C3C3C))),
                 IconButton(
-                  icon: const Icon(Icons.add_circle_outline, color: Color(0xFF3C3C3C)),
-                  onPressed: _incrementQuantity,
+                  icon: const Icon(Icons.remove_circle, color: Colors.red),
+                  onPressed: _decrementQuantity,
                 ),
               ],
             ),
