@@ -14,7 +14,7 @@ class ProductScreen extends StatelessWidget {
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 250, 246, 235),
-        elevation: 2.0, // Adds shadow
+        elevation: 1.0, // Adds shadow
         shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
