@@ -16,11 +16,11 @@ class ProductScreen extends StatelessWidget {
         backgroundColor: const Color(0xFFD4ED91),
         title: const Row(
           children: [
-            Text('Sales IMS'),
+            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
             Icon(Icons.folder),
             SizedBox(width: 8),
-            Text('Products'),
+            Text('Products', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
         ),
       ),

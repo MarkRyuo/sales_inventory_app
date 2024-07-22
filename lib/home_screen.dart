@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
-            Text('Sales IMS'),
+            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
             Icon(Icons.home),
             SizedBox(width: 8),
