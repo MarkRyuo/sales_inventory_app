@@ -44,13 +44,15 @@ class _HomeScreenState extends State<HomeScreen> {
           const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 250, 241, 216),
+        elevation: 2.0, // Adds shadow
+        shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
-            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60),),
+            Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60)),
           ],
         ),
         actions: [
@@ -65,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
