@@ -90,7 +90,6 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.search),
               label: const Text(
                 'Search assets',
-                style: TextStyle(fontFamily: 'Poppins'),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
