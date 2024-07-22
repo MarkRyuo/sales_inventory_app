@@ -18,7 +18,7 @@ class ProductScreen extends StatelessWidget {
           children: [
             Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Icon(Icons.folder),
+            Icon(Icons.folder, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
             Text('Products', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
