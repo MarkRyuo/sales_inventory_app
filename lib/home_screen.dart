@@ -76,12 +76,12 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.qr_code_scanner),
               label: const Text(
                 'Scan asset',
-                style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(255, 255, 255, 255)),
+                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 22),
-                textStyle: const TextStyle(fontFamily: 'Poppins', fontSize: 18),
+                textStyle: const TextStyle(fontSize: 18),
               ),
             ),
             const SizedBox(height: 24),
