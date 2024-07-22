@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         shadowColor: Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
-            Text('Sales IMS', style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(200, 60, 60, 60))),
+            Text('Sales IMS', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
             SizedBox(width: 8),
             Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
