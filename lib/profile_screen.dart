@@ -103,8 +103,8 @@ class ProfileScreen extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: const Color(0xFF50B498),
-        unselectedItemColor: const Color(0xFF9CDBA6),
+        selectedItemColor: const Color.fromARGB(255, 138, 255, 138),
+        unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
   }
