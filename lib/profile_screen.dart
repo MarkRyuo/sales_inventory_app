@@ -11,14 +11,16 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFD4ED91),
+        backgroundColor: const Color.fromARGB(255, 250, 246, 235),
+        elevation: 1.0, // Adds shadow
+        shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
-            Text('Sales IMS'),
+            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Icon(Icons.person),
+            Icon(Icons.person, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Text('Profile'),
+            Text('Profile', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
         ),
       ),
@@ -27,7 +29,7 @@ class ProfileScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 50,
+              radius: 70,
               backgroundColor: Colors.grey[300],
               child: Icon(
                 Icons.person,
@@ -44,11 +46,11 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.grey[800],
               ),
             ),
-            Text(
+            const Text(
               'Position',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.grey[600],
+                color: Color.fromARGB(200, 60, 60, 60),
               ),
             ),
             const SizedBox(height: 24),
@@ -62,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
               style: TextButton.styleFrom(
                 foregroundColor: const Color(0xFF50B498),
               ),
-              child: const Text('Log out'),
+              child: const Text('Log out', selectionColor: Color.fromARGB(255, 0, 209, 75),),
             ),
           ],
         ),
@@ -103,8 +105,8 @@ class ProfileScreen extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: const Color(0xFF50B498),
-        unselectedItemColor: const Color(0xFF9CDBA6),
+        selectedItemColor: const Color.fromARGB(255, 138, 255, 138),
+        unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
   }

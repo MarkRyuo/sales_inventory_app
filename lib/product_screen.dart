@@ -13,92 +13,107 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFD4ED91),
+        backgroundColor: const Color.fromARGB(255, 250, 246, 235),
+        elevation: 1.0, // Adds shadow
+        shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
-            Text('Sales IMS'),
+            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Icon(Icons.folder),
+            Icon(Icons.folder, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Text('Products'),
+            Text('Products', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
         ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0), // Add padding if needed
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start, // Align to the start
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  crossAxisAlignment: CrossAxisAlignment.start, // Align to the start
+  children: [
+    Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        // Adjust width based on screen size
+        SizedBox(
+          width: screenWidth * 0.4, // 40% of screen width
+          child: Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: const Color(0xFFDEF9C4),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Adjust width based on screen size
-                SizedBox(
-                  width: screenWidth * 0.4, // 40% of screen width
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFDEF9C4),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          '0',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),
-                        ),
-                        Icon(Icons.cable, color: Colors.green),
-                        Text(
-                          'Product',
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
+                Text(
+                  '0',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
                   ),
                 ),
-                SizedBox(
-                  width: screenWidth * 0.4, // 40% of screen width
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFDEF9C4),
-                      borderRadius: BorderRadius.circular(8),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.cable, color: Colors.green),
+                    SizedBox(width: 8), // Add some spacing between icon and text
+                    Text(
+                      'Product',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
                     ),
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          '0',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),
-                        ),
-                        Icon(Icons.bar_chart, color: Colors.green),
-                        Text(
-                          'Sales',
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  ],
                 ),
               ],
             ),
-          ],
+          ),
         ),
+        SizedBox(
+          width: screenWidth * 0.4, // 40% of screen width
+          child: Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: const Color(0xFFDEF9C4),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  '0',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.bar_chart, color: Colors.green),
+                    SizedBox(width: 8), // Add some spacing between icon and text
+                    Text(
+                      'Sales',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    ),
+  ],
+),
+
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
@@ -138,8 +153,8 @@ class ProductScreen extends StatelessWidget {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: const Color(0xFF50B498),
-        unselectedItemColor: const Color(0xFF9CDBA6),
+        selectedItemColor: const Color.fromARGB(255, 138, 255, 138),
+        unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
   }
