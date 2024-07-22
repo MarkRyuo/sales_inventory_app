@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Scan asset', selectionColor: Color.fromARGB(255, 255, 255, 255),),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),   
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20), 
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 22), 
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Search assets'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 24),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Add new asset'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
