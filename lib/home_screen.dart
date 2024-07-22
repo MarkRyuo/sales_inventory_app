@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               icon: const Icon(Icons.search, color: Color.fromARGB(200, 60, 60, 60),),
               label: const Text(
-                'Search assets',
+                'Search assets', selectionColor: Color.fromARGB(200, 60, 60, 60),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
