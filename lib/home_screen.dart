@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFD4ED91),
+        backgroundColor: const Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
             Icon(Icons.home),
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.qr_code_scanner),
               label: const Text('Scan asset'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF50B498),
+                backgroundColor: Color.fromARGB(255, 138, 255, 138),
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: const TextStyle(fontSize: 18),
               ),
