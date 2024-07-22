@@ -40,9 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF7E1), // Background color
+      backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 250, 241, 216),
+        backgroundColor: Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
             Icon(Icons.home),
@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: Color.fromARGB(255, 138, 255, 138),
+        selectedItemColor: const Color.fromARGB(255, 138, 255, 138),
         unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
