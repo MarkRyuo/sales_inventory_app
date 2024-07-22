@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 250, 246, 235),
+        backgroundColor: const Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
         shadowColor: Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
         title: const Row(
