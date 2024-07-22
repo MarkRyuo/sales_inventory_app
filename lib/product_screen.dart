@@ -16,104 +16,104 @@ class ProductScreen extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
         shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
+        automaticallyImplyLeading: false, // Removes the back button
         title: const Row(
           children: [
-            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Sales IMS', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
             SizedBox(width: 8),
-            Icon(Icons.folder, color: Color.fromARGB(200, 60, 60, 60),),
+            Icon(Icons.folder, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Text('Products', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Products', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
           ],
         ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0), // Add padding if needed
         child: Column(
-  crossAxisAlignment: CrossAxisAlignment.start, // Align to the start
-  children: [
-    Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        // Adjust width based on screen size
-        SizedBox(
-          width: screenWidth * 0.4, // 40% of screen width
-          child: Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: const Color(0xFFDEF9C4),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start, // Align to the start
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text(
-                  '0',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                // Adjust width based on screen size
+                SizedBox(
+                  width: screenWidth * 0.4, // 40% of screen width
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFDEF9C4),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          '0',
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.cable, color: Colors.green),
+                            SizedBox(width: 8), // Add some spacing between icon and text
+                            Text(
+                              'Product',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.cable, color: Colors.green),
-                    SizedBox(width: 8), // Add some spacing between icon and text
-                    Text(
-                      'Product',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                      ),
+                SizedBox(
+                  width: screenWidth * 0.4, // 40% of screen width
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFDEF9C4),
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                  ],
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          '0',
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.bar_chart, color: Colors.green),
+                            SizedBox(width: 8), // Add some spacing between icon and text
+                            Text(
+                              'Sales',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
-          ),
+          ],
         ),
-        SizedBox(
-          width: screenWidth * 0.4, // 40% of screen width
-          child: Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: const Color(0xFFDEF9C4),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  '0',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.bar_chart, color: Colors.green),
-                    SizedBox(width: 8), // Add some spacing between icon and text
-                    Text(
-                      'Sales',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    ),
-  ],
-),
-
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
