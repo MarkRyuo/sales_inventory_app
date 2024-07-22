@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: const Color(0xFF50B498),
+        selectedItemColor: Color.fromARGB(255, 138, 255, 138),
         unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
