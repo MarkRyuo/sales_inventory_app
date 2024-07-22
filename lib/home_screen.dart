@@ -42,12 +42,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 250, 241, 216),
+        backgroundColor: const Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
-            Icon(Icons.home),
+            Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Text('Home'),
+            Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
         ),
         actions: [
@@ -65,14 +65,14 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: [ 
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.qr_code_scanner),
-              label: const Text('Scan asset'),
+              label: const Text('Scan asset', selectionColor: Color.fromARGB(255, 255, 255, 255),),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                backgroundColor: const Color.fromARGB(255, 138, 255, 138),   
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20), 
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
