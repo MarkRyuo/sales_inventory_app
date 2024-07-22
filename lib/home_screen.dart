@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(width: 8),
             Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Text('Home', style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(200, 60, 60, 60))),
+            Text('Home', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
           ],
         ),
         actions: [
@@ -73,10 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             ElevatedButton.icon(
               onPressed: () {},
-              icon: const Icon(Icons.qr_code_scanner),
+              icon: const Icon(Icons.qr_code_scanner, color: Color.fromARGB(200, 60, 60, 60),),
               label: const Text(
                 'Scan asset',
-                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
+                style: TextStyle(color: Color.fromARGB(200, 60, 60, 60)),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: const Icon(Icons.search),
+              icon: const Icon(Icons.search, color: Color.fromARGB(200, 60, 60, 60),),
               label: const Text(
                 'Search assets',
               ),
