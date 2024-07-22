@@ -16,7 +16,7 @@ class ProfileScreen extends StatelessWidget {
           children: [
             Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Icon(Icons.folder, color: Color.fromARGB(200, 60, 60, 60),),
+            Icon(Icons.person, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
             Text('Profile', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
@@ -27,7 +27,7 @@ class ProfileScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 50,
+              radius: 70,
               backgroundColor: Colors.grey[300],
               child: Icon(
                 Icons.person,
@@ -44,11 +44,11 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.grey[800],
               ),
             ),
-            Text(
+            const Text(
               'Position',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.grey[600],
+                color: Color.fromARGB(200, 60, 60, 60),
               ),
             ),
             const SizedBox(height: 24),
@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
               style: TextButton.styleFrom(
                 foregroundColor: const Color(0xFF50B498),
               ),
-              child: const Text('Log out'),
+              child: const Text('Log out', selectionColor: Color.fromARGB(255, 0, 209, 75),),
             ),
           ],
         ),
