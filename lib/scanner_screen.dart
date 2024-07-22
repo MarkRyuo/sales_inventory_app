@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'home_screen.dart';
 
 class ScannerScreen extends StatefulWidget {
@@ -47,7 +48,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
+            SvgPicture.asset(
               'assets/barcode-business-tools-information-svgrepo-com.svg', // Ensure this image exists in your assets
               width: 200, // Adjust the width and height as needed
               height: 200,
