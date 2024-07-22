@@ -48,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: const Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
         shadowColor: const Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
+        automaticallyImplyLeading: false, // Removes the back button
         title: const Row(
           children: [
             Text('Sales IMS', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
