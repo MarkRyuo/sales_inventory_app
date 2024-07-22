@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
                 padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
-                textStyle: const TextStyle(fontFamily: 'Poppins', fontSize: 18),
+                textStyle: const TextStyle(fontSize: 18),
               ),
             ),
           ],
