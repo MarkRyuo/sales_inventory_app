@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.add),
               label: const Text('Add new asset'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF468585),
+                backgroundColor: Color.fromARGB(255, 188, 228, 228),
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                 textStyle: const TextStyle(fontSize: 18),
               ),
