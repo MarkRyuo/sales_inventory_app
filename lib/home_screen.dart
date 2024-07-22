@@ -4,7 +4,7 @@ import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
 import 'scanner_screen.dart'; // Import the ScannerScreen
-// import 'search_assets_screen.dart'; // Import the SearchAssetsScreen
+import 'add_new_asset_screen.dart'; // Import the AddNewAssetScreen
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -112,7 +112,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AddNewAssetScreen()),
+                );
+              },
               icon: const Icon(Icons.add, color: Color.fromARGB(200, 60, 60, 60)),
               label: const Text(
                 'Add new asset', 
