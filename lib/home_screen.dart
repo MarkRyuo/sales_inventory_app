@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.folder),
-            label: 'Files',
+            label: 'Products',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -119,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
         selectedItemColor: const Color(0xFF50B498),
-        unselectedItemColor: Color.fromARGB(255, 135, 184, 144),
+        unselectedItemColor: const Color.fromARGB(200, 60, 60, 60),
       ),
     );
   }
