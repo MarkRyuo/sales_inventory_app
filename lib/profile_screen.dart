@@ -14,13 +14,14 @@ class ProfileScreen extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
         shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
+        automaticallyImplyLeading: false, // Removes the back button
         title: const Row(
           children: [
-            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Sales IMS', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
             SizedBox(width: 8),
-            Icon(Icons.person, color: Color.fromARGB(200, 60, 60, 60),),
+            Icon(Icons.person, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Text('Profile', selectionColor: Color.fromARGB(200, 60, 60, 60),),
+            Text('Profile', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
           ],
         ),
       ),
@@ -64,7 +65,7 @@ class ProfileScreen extends StatelessWidget {
               style: TextButton.styleFrom(
                 foregroundColor: const Color(0xFF50B498),
               ),
-              child: const Text('Log out', selectionColor: Color.fromARGB(255, 0, 209, 75),),
+              child: const Text('Log out', style: TextStyle(color: Color.fromARGB(255, 0, 209, 75))),
             ),
           ],
         ),
@@ -88,7 +89,6 @@ class ProfileScreen extends StatelessWidget {
             case 2:
               // Handle Profile tab (do nothing)
               break;
-            case 3: 
           }
         },
         items: const <BottomNavigationBarItem>[
