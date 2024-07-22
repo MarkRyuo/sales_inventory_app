@@ -48,7 +48,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/logo.jpg', // Ensure this image exists in your assets
+              'assets/barcode-business-tools-information-svgrepo-com', // Ensure this image exists in your assets
               width: 200, // Adjust the width and height as needed
               height: 200,
             ),
