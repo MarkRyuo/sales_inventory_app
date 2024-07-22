@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
+import 'scanner_screen.dart'; // Import the ScannerScreen
 
 
 class HomeScreen extends StatefulWidget {
@@ -45,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
-        shadowColor: Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
+        shadowColor: const Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
             Text('Sales IMS', style: TextStyle(color: Color.fromARGB(200, 60, 60, 60))),
@@ -72,7 +73,12 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ScannerScreen()),
+                );
+              },
               icon: const Icon(Icons.qr_code_scanner, color: Color.fromARGB(200, 60, 60, 60),),
               label: const Text(
                 'Scan asset',
