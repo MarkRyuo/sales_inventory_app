@@ -40,12 +40,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
+      backgroundColor:
+          const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
-            Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60),),
+            Text('Sales IMS'),
+            SizedBox(width: 8),
+            Icon(Icons.home),
             SizedBox(width: 8),
             Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
@@ -65,14 +68,18 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [ 
+          children: [
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.qr_code_scanner),
-              label: const Text('Scan asset', selectionColor: Color.fromARGB(255, 255, 255, 255),),
+              label: const Text(
+                'Scan asset',
+                selectionColor: Color.fromARGB(255, 255, 255, 255),
+              ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 138, 255, 138),   
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 22), 
+                backgroundColor: const Color.fromARGB(255, 138, 255, 138),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 22),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
@@ -83,7 +90,8 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Search assets'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 24),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 55, vertical: 24),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
@@ -94,7 +102,8 @@ class _HomeScreenState extends State<HomeScreen> {
               label: const Text('Add new asset'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
                 textStyle: const TextStyle(fontSize: 18),
               ),
             ),
