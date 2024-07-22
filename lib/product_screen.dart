@@ -13,7 +13,7 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFD4ED91),
+        backgroundColor: const Color.fromARGB(255, 250, 241, 216),
         title: const Row(
           children: [
             Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
