@@ -3,6 +3,7 @@ import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
