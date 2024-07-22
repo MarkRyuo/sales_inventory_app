@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
-            Icon(Icons.home),
+            Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60),),
             SizedBox(width: 8),
             Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60),),
           ],
