@@ -40,19 +40,18 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          const Color.fromARGB(255, 253, 247, 225), // Background color
+      backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 250, 246, 235),
         elevation: 1.0, // Adds shadow
         shadowColor: Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
         title: const Row(
           children: [
-            Text('Sales IMS', selectionColor: Color.fromARGB(200, 60, 60, 60)),
+            Text('Sales IMS', style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(200, 60, 60, 60))),
             SizedBox(width: 8),
             Icon(Icons.home, color: Color.fromARGB(200, 60, 60, 60)),
             SizedBox(width: 8),
-            Text('Home', selectionColor: Color.fromARGB(200, 60, 60, 60)),
+            Text('Home', style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(200, 60, 60, 60))),
           ],
         ),
         actions: [
@@ -67,7 +66,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -77,37 +75,40 @@ class _HomeScreenState extends State<HomeScreen> {
               icon: const Icon(Icons.qr_code_scanner),
               label: const Text(
                 'Scan asset',
-                selectionColor: Color.fromARGB(255, 255, 255, 255),
+                style: TextStyle(fontFamily: 'Poppins', color: Color.fromARGB(255, 255, 255, 255)),
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 50, vertical: 22),
-                textStyle: const TextStyle(fontSize: 18),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 22),
+                textStyle: const TextStyle(fontFamily: 'Poppins', fontSize: 18),
               ),
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.search),
-              label: const Text('Search assets'),
+              label: const Text(
+                'Search assets',
+                style: TextStyle(fontFamily: 'Poppins'),
+              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 55, vertical: 24),
-                textStyle: const TextStyle(fontSize: 18),
+                padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 24),
+                textStyle: const TextStyle(fontFamily: 'Poppins', fontSize: 18),
               ),
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.add),
-              label: const Text('Add new asset'),
+              label: const Text(
+                'Add new asset',
+                style: TextStyle(fontFamily: 'Poppins'),
+              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 138, 255, 138),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
-                textStyle: const TextStyle(fontSize: 18),
+                padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 25),
+                textStyle: const TextStyle(fontFamily: 'Poppins', fontSize: 18),
               ),
             ),
           ],
