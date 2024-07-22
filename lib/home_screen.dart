@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:sales_inventory_app/SearchAssetsScreen.dart';
 import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
 import 'scanner_screen.dart'; // Import the ScannerScreen
-
+// import 'search_assets_screen.dart'; // Import the SearchAssetsScreen
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -79,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   MaterialPageRoute(builder: (context) => const ScannerScreen()),
                 );
               },
-              icon: const Icon(Icons.qr_code_scanner, color: Color.fromARGB(200, 60, 60, 60),),
+              icon: const Icon(Icons.qr_code_scanner, color: Color.fromARGB(200, 60, 60, 60)),
               label: const Text(
                 'Scan asset',
                 style: TextStyle(color: Color.fromARGB(200, 60, 60, 60)),
@@ -92,8 +93,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
-              onPressed: () {},
-              icon: const Icon(Icons.search, color: Color.fromARGB(200, 60, 60, 60),),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SearchAssetsScreen()),
+                );
+              },
+              icon: const Icon(Icons.search, color: Color.fromARGB(200, 60, 60, 60)),
               label: const Text(
                 'Search assets', 
                 style: TextStyle(color: Color.fromARGB(200, 60, 60, 60)),
@@ -107,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 24),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: const Icon(Icons.add, color: Color.fromARGB(200, 60, 60, 60),),
+              icon: const Icon(Icons.add, color: Color.fromARGB(200, 60, 60, 60)),
               label: const Text(
                 'Add new asset', 
                 style: TextStyle(color: Color.fromARGB(200, 60, 60, 60)),
