@@ -45,42 +45,48 @@ class _ScannerScreenState extends State<ScannerScreen> {
         ),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset(
-              'assets/barcode-business-tools-information-svgrepo-com.svg', // Ensure this image exists in your assets
-              width: 200, // Adjust the width and height as needed
-              height: 200,
-            ),
-            const SizedBox(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.add_circle, color: Colors.green),
-                  onPressed: _incrementQuantity,
-                ),
-                Text('$_quantity', style: const TextStyle(fontSize: 24)),
-                IconButton(
-                  icon: const Icon(Icons.remove_circle, color: Colors.red),
-                  onPressed: _decrementQuantity,
-                ),
-              ],
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: () {
-                // Handle the Done button press
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF8AFF8A),
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-                textStyle: const TextStyle(fontSize: 18),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset(
+                'assets/barcode-business-tools-information-svgrepo-com.svg', // Ensure this image exists in your assets
+                width: 200, // Adjust the width and height as needed
+                height: 200,
               ),
-              child: const Text('Done', style: TextStyle(color: Color(0xFF3C3C3C))),
-            ),
-          ],
+              const SizedBox(height: 48), // Increased spacing
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.add_circle, color: Colors.green),
+                    onPressed: _incrementQuantity,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Text('$_quantity', style: const TextStyle(fontSize: 24)),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.remove_circle, color: Colors.red),
+                    onPressed: _decrementQuantity,
+                  ),
+                ],
+              ),
+              const SizedBox(height: 48), // Increased spacing
+              ElevatedButton(
+                onPressed: () {
+                  // Handle the Done button press
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF8AFF8A),
+                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle: const TextStyle(fontSize: 18),
+                ),
+                child: const Text('Done', style: TextStyle(color: Color(0xFF3C3C3C))),
+              ),
+            ],
+          ),
         ),
       ),
     );
