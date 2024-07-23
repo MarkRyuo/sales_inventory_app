@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sales_inventory_app/SearchAssetsScreen.dart';
+import 'package:sales_inventory_app/login_screen.dart';
 import 'package:sales_inventory_app/product_screen.dart';
-import 'main.dart'; // Import the main file to access the LoginScreen
 import 'profile_screen.dart'; // Import the ProfileScreen
 import 'scanner_screen.dart'; // Import the ScannerScreen
 import 'add_new_asset_screen.dart'; // Import the AddNewAssetScreen
