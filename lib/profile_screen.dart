@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sales_inventory_app/home_screen.dart';
 import 'package:sales_inventory_app/login_screen.dart';
 import 'package:sales_inventory_app/product_screen.dart';
-i
+
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
