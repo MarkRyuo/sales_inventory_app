@@ -1,6 +1,6 @@
 # sales_inventory_app
 
-A new Flutter project.
+A Final Flutter project.
 
 <h2>Version 2.5 Currently</h2> 
 
