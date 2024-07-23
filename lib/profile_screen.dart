@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sales_inventory_app/home_screen.dart';
+import 'package:sales_inventory_app/login_screen.dart';
 import 'package:sales_inventory_app/product_screen.dart';
 import 'main.dart'; // Import the main file to access the LoginScreen
 
