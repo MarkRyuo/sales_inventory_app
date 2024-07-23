@@ -2,15 +2,20 @@
 
 A new Flutter project.
 
-## Getting Started
+<h2>Version 2.5</h2> 
 
-This project is a starting point for a Flutter application.
+## Explanation: 
+    Version 2.5 this -v created July 23, 2024 by Jhon Mark. Updating the main.dart separated to login then created the new file called login_screen.dart. To this version, testing to connect to firebase. V2.5 is a copy of V2.4 but 2.5 is better and stable. 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h3>Version 2.4</h3> WARNING! THIS VERSION HAVE A PROBLEM 
+Explanation: 
+
+    Version 2.4 this -v created July 23, 2024 by Jhon Mark. Updating the main.dart separated to login then created the new file called login_screen.dart. To this version, testing to connect to firebase. 
+
+
+
+<h3>Version 2.3</h3> 
+Explanation:  
+    Version 2.3 this branch created July 22, 2024 by Jhon Mark. Creating a scanner_screen.dart, updating main.dart which is the log-in interface then the profile_screen.dart. 
