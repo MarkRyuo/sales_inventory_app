@@ -28,7 +28,7 @@ class _AddNewAssetScreenState extends State<AddNewAssetScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
+      backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
         backgroundColor: const Color(0xFFFAF6EB),
         elevation: 1.0,
