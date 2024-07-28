@@ -31,7 +31,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 250, 248, 244),
+      backgroundColor: const Color(0xFFFFFAEB), // top bar Background color
         elevation: 1.0,
         shadowColor: const Color(0xFF505050).withOpacity(0.6),
         leading: IconButton(
