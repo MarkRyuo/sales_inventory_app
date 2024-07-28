@@ -30,7 +30,7 @@ A Final Test Flutter project.
     Version 2.3 this branch created July 22, 2024 by Jhon Mark. Creating a scanner_screen.dart, updating main.dart which is the log-in interface then the profile_screen.dart. 
 
 
-V2.2 : NONE
+#### V2.2 : NONE
 
 
 <h3>Version 2.1<h3>
