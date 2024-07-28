@@ -2,6 +2,14 @@
 
 A Final Test Flutter project.
 
+
+## Version 2.5 Currently 
+
+<i>Explanation:</i> 
+
+    Version 2.5 this -v created July 23, 2024 by Jhon Mark. Updating the main.dart separated to login then created the new file called login_screen.dart. To this version, testing to connect to firebase. V2.5 is a copy of V2.4 but 2.5 is better and stable. 
+
+
 <h2>Version 2.5 Currently</h2> 
 
 <i>Explanation:</i> 
