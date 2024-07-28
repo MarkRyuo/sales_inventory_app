@@ -13,7 +13,7 @@ class ProductScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
-      backgroundColor: const Color(0xFFFFFAEB), // Background color
+      backgroundColor: const Color(0xFFFFFAEB), // top bar Background color
         elevation: 1.0, // Adds shadow
         shadowColor: Colors.grey.withOpacity(0.6), // Customize the shadow color
         automaticallyImplyLeading: false, // Removes the back button
