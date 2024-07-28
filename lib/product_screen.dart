@@ -11,7 +11,7 @@ class ProductScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF7E1), // Background color
+      backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 250, 248, 244),
         elevation: 1.0, // Adds shadow
