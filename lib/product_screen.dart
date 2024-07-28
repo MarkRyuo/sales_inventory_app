@@ -142,7 +142,7 @@ class ProductScreen extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.folder),
-            label: 'Files',
+            label: 'Products',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
