@@ -17,7 +17,7 @@ A Final Test Flutter project.
 
 
 
-### Version 2.4 WARNING! THIS VERSION HAVE A PROBLEM 
+### Version 2.4 ( WARNING! THIS VERSION HAVE A PROBLEM ) 
 Explanation: 
 
     Version 2.4 this -v created July 23, 2024 by Jhon Mark. Updating the main.dart separated to login then created the new file called login_screen.dart. To this version, testing to connect to firebase. 
