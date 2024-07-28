@@ -12,7 +12,7 @@ class _SearchAssetsScreenState extends State<SearchAssetsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF7E1), // Background color
+      backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 250, 248, 244),
         elevation: 1.0,
