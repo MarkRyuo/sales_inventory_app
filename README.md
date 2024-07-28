@@ -9,7 +9,7 @@ A Final Test Flutter project.
 
     Version 2.6 this -v created July 28, 2024 by Jhon Mark. Updating the colors to all tabs
 
-<h2>Version 2.5 Currently</h2> 
+### Version 2.5
 
 <i>Explanation:</i> 
 
