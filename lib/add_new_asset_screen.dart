@@ -59,7 +59,7 @@ class _AddNewAssetScreenState extends State<AddNewAssetScreen> {
             const SizedBox(height: 8),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Text box',
+                hintText: 'e.g 123456789012',
                 filled: true,
                 fillColor: const Color(0xFF8AFF8A),
                 border: OutlineInputBorder(
@@ -73,7 +73,7 @@ class _AddNewAssetScreenState extends State<AddNewAssetScreen> {
             const SizedBox(height: 8),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Text box',
+                hintText: '-',
                 filled: true,
                 fillColor: const Color(0xFF8AFF8A),
                 border: OutlineInputBorder(
@@ -87,7 +87,7 @@ class _AddNewAssetScreenState extends State<AddNewAssetScreen> {
             const SizedBox(height: 8),
             TextField(
               decoration: InputDecoration(
-                hintText: 'Text box',
+                hintText: '-',
                 filled: true,
                 fillColor: const Color(0xFF8AFF8A),
                 border: OutlineInputBorder(
