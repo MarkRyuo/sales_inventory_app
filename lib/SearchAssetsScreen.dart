@@ -12,9 +12,9 @@ class _SearchAssetsScreenState extends State<SearchAssetsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF7E1), // Background color
+      backgroundColor: const Color(0xFFFFFAEB), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFAF6EB),
+      backgroundColor: const Color(0xFFFFFAEB), // top bar Background color
         elevation: 1.0,
         shadowColor: const Color(0xFF505050).withOpacity(0.6),
         leading: IconButton(
