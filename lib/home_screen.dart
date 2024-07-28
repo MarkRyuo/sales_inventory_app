@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 253, 247, 225), // Background color
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 250, 246, 235),
+        backgroundColor: Color.fromARGB(255, 250, 248, 244),
         elevation: 1.0, // Adds shadow
         shadowColor: const Color.fromARGB(255, 80, 80, 80).withOpacity(0.6), // Customize the shadow color
         automaticallyImplyLeading: false, // Removes the back button
