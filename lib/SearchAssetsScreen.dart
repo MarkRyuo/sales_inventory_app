@@ -14,7 +14,7 @@ class _SearchAssetsScreenState extends State<SearchAssetsScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFFDF7E1), // Background color
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFAF6EB),
+        backgroundColor: Color.fromARGB(255, 250, 248, 244),
         elevation: 1.0,
         shadowColor: const Color(0xFF505050).withOpacity(0.6),
         leading: IconButton(
