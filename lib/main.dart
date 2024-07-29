@@ -6,6 +6,7 @@ void main() {
   runApp(const SalesInventoryApp());
 }
 
+
 class SalesInventoryApp extends StatelessWidget {
   const SalesInventoryApp({super.key});
 
