@@ -18,6 +18,6 @@ class SalesInventoryApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const LoginScreen(),
-    );
+    ); 
   }
 }
