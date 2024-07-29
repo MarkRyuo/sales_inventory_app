@@ -22,3 +22,4 @@ class SalesInventoryApp extends StatelessWidget {
     ); 
   }
 }
+
